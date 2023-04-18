@@ -4,5 +4,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root to: 'homes#index'
+  get '/contact', to: 'homes#contact'
+  get '/tos', to: 'homes#tos'
+  get '/sitepolicy', to: 'homes#sitepolicy'
+  get '/personal_information', to: 'homes#personal_information'
   resources :items
 end
