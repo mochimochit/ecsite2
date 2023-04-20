@@ -20,6 +20,6 @@
         <li class="menu-item"><%= link_to("ログアウト", destroy_user_session_path, method: :delete )%></li>
       </nav>
     </header>
-    <%= yield %>
+    <div class="main"><%= yield %></div>
   </body>
 </html>
