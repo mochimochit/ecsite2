@@ -13,4 +13,9 @@ Rails.application.routes.draw do
   get '/sitepolicy', to: 'homes#sitepolicy'
   get '/personal_information', to: 'homes#personal_information'
   resources :items
+
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+
 end
