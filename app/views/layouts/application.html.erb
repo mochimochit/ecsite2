@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <header>
+      <div class="logo">LOGO</div>
+      <nav>
+        <li class="menu-item"><%= link_to 'ホーム', root_path %></li>
+        <li class="menu-item"><%= link_to 'マイリスト', '/items/index' %></li>
+        <li class="menu-item"><%= link_to 'ログイン', new_user_session_path %></li>
+        <li class="menu-item"><%= link_to("ログアウト", destroy_user_session_path, method: :delete )%></li>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
