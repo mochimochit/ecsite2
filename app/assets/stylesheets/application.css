@@ -14,15 +14,7 @@
  *= require_self
  */
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  border-width: 0px;
-  border-style: solid;
-  margin: 0;
-  line-height: 1;
-  list-style-type: none;
-}
+
 
 a{
   color:inherit;
