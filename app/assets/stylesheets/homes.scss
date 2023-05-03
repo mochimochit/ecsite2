@@ -1,0 +1,35 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.homes_contact {
+  .contact-form {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .label{
+    display: block;
+    padding: 10px 0px;
+  }
+  .text-field {
+    border: 1.5px solid black;
+    width: 100%;
+  }
+  textarea{
+    height: 300px;
+  }
+  .btn-area {
+    text-align: right;
+  }
+  .submit-btn {
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}

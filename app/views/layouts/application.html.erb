@@ -11,7 +11,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class='<%= "#{controller.controller_name}_#{controller.action_name}" %>'>
     <header>
       <div class="logo">LOGO</div>
       <nav>
