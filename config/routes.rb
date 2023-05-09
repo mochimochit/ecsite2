@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get '/tos', to: 'homes#tos'
   get '/sitepolicy', to: 'homes#sitepolicy'
   get '/personal_information', to: 'homes#personal_information'
+  post '/contact', to: 'homes#sending'
+
   resources :items
 
   devise_scope :user do
