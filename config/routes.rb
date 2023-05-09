@@ -8,11 +8,11 @@ Rails.application.routes.draw do
   root to: 'homes#index'
   resources :items
   
-  get '/contact', to: 'homes#contact'
   get '/tos', to: 'homes#tos'
   get '/sitepolicy', to: 'homes#sitepolicy'
   get '/personal_information', to: 'homes#personal_information'
-  post '/contact', to: 'homes#sending'
+  get '/contact', to: 'contact#contact'
+  post '/contact', to: 'contact#sending'
 
   resources :items
 
