@@ -1,0 +1,26 @@
+.items_new{
+  .content{
+    height: 700px;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .label{
+    display: block;
+    padding: 10px 0px;
+  }
+  .text-field {
+    border: 1.5px solid black;
+    width: 100%;
+  }
+  textarea{
+    height: 300px;
+  }
+  .btn-area {
+    text-align: right;
+  }
+  .submit-btn {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}

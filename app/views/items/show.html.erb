@@ -1,5 +1,57 @@
-<div>name:<%= @items.name %></div>
-<div>detail:<%= @items.detail %></div>
-<div>user_id:<%= @items.user_id %></div>
-<div>created_at:<%= @items.created_at %></div>
-<div>updated_at:<%= @items.updated_at %></div>
+<div class="content">
+  <div class="item_area">
+    <div class="image_area">
+      <div class="swiper sub-slider">
+        <div class="swiper-wrapper sub-wrapper">
+            <div class="swiper-slide sub-img"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+            <div class="swiper-slide sub-img"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+            <div class="swiper-slide sub-img"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+            <div class="swiper-slide sub-img"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+        </div>
+      </div>
+      <div class="swiper main-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+            <div class="swiper-slide"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+            <div class="swiper-slide"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+            <div class="swiper-slide"><%= image_tag 'noimage.png', :size => '130x130' %></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+
+    <div class="detail_area">
+      <div class="title"><%= @items.name %></div>
+      <div  class="buy_area">
+        <div class="price"><%= @items.price %></div>
+        <div class="buying"><%= link_to '購入手続きへ', "" %></div>
+      </div>
+      <div class="detail"><%= @items.detail %></div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <h2>おすすめ商品</h2>
+  <div class="recommended_area">
+    <div class="item">
+      <div class="name">nemaname</div>
+      <div class="price">1823192円</div>
+      <div><%= image_tag 'noimage.png', :size => '150x150' %></div>
+    </div>
+    <div class="item">
+      <div class="name">nemaname</div>
+      <div class="price">1823192円</div>
+      <div><%= image_tag 'noimage.png', :size => '150x150' %></div>
+    </div>
+    <div class="item">
+      <div class="name">nemaname</div>
+      <div class="price">1823192円</div>
+      <div><%= image_tag 'noimage.png', :size => '150x150' %></div>
+    </div>
+  </div>
+</div>
+

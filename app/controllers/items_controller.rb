@@ -17,21 +17,15 @@ class ItemsController < ApplicationController
 
   def create
     @items = Item.new(item_params)
-    if @items.save
-      redirect_to @items
-    else       
-      redirect_to @items     
-    end
+    @items.save
+    redirect_to @items
   end
 
   def update
     @items = Item.find(params[:id])
     @items.update(item_params)
-    if @items.save
-      redirect_to @items
-    else       
-      redirect_to @items     
-    end
+    @items.save
+    redirect_to @items
   end
 
   def destroy
@@ -40,6 +34,6 @@ class ItemsController < ApplicationController
   end
 
   def item_params
-    params.require(:item).permit(:name, :detail, :price, :user_id)
+    params.require(:item).permit(:name, :detail, :price, :user_id,images:[])
   end
 end

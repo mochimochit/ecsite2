@@ -71,5 +71,8 @@ group :test do
   gem "webdrivers"
 end
 
+# 追加
 gem 'devise'
 gem "dotenv-rails"
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'

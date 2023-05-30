@@ -1,16 +1,24 @@
-<h1>NEW</h1>
-<%= form_with(model: @items) do |form| %>
-  <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :detail %>
-    <%= form.text_area :detail %>   
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+<h1>出品ページ</h1>
+<div class="content">
+    <%= form_with(model: @items) do |form| %>
+      <div class="field">
+        <%= form.label :images, value="商品画像", class: "label" %>
+        <%= form.file_field :images, class: "text-field", multiple: true %>
+      </div>
+      <div class="field">
+        <%= form.label :price, value="値段", class: "label" %>
+        <%= form.text_field :price, class: "text-field" %>
+      </div>
+      <div class="field">
+        <%= form.label :name, value="商品名", class: "label" %>
+        <%= form.text_field :name, class: "text-field" %>
+      </div>
+      <div class="field">
+        <%= form.label :detail, value="商品説明", class: "label" %>
+        <%= form.text_area :detail, class: "text-field" %>
+      </div>
+      <div class="btn-area">
+        <%= form.submit "出品する", class: "submit-btn" %>
+      </div>
+    <% end %>
+</div>
