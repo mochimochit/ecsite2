@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-@import 'swiper/swiper-bundle.min.css';
-
-
 a{
   color:inherit;
   text-decoration: none;
