@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
-
-
 a{
   color:inherit;
   text-decoration: none;
